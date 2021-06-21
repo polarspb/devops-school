@@ -3,12 +3,10 @@ name: Simple Workflow
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags' 
+      text1:
+        description: 'Input text 1'     
+      text2:
+        description: 'Input text 2'
 
 jobs:
 
@@ -29,5 +27,5 @@ jobs:
               path: /home/runner/work/devops-school/devops-school/log.md
         - name: 1.4 test
           run: |
-            echo "Log level: ${{ github.event.inputs.logLevel }}"
-            echo "Tags: ${{ github.event.inputs.tags }}" 
+            echo "Text1: ${{ github.event.inputs.text1 }}"
+            echo "Text2: ${{ github.event.inputs.text2 }}" 
