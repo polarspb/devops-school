@@ -25,7 +25,8 @@ jobs:
           with:
               name: log.md
               path: /home/runner/work/devops-school/devops-school/log.md
-        - name: 1.4 test
+        - name: 1.4 TEST TEXT INPUT
           run: |
+            echo "Text message"
             echo "Text1: ${{ github.event.inputs.text1 }}"
             echo "Text2: ${{ github.event.inputs.text2 }}" 
