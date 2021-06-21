@@ -28,5 +28,5 @@ jobs:
         - name: 1.4 TEST TEXT INPUT
           run: |
             echo "Text message"
-            echo "Text1: ${{ github.event.inputs.text1 }}"
+            echo "Text1: ${{ github.event.inputs.text1 }}" >> log.md
             echo "Text2: ${{ github.event.inputs.text2 }}" 
