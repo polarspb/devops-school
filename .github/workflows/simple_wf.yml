@@ -28,6 +28,6 @@ jobs:
         - name: 1.5 TEST TEXT INPUT
           run: |
             echo "Text message"
-            sudo echo "Text1: ${{ github.event.inputs.text1 }}" >> /home/runner/work/devops-school/devops-school/log.md
-            sudo echo "Text1: ${{ github.event.inputs.text1 }}" >> log.md
+            sudo echo "Text1: ${{ github.event.inputs.text1 }}"
+            sudo echo "Text1: ${{ github.event.inputs.text1 }}"
 
